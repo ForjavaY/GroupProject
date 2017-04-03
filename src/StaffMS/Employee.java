@@ -11,7 +11,7 @@ import java.util.Date;
 		private int id;
 		private String fullName;
 		private String birthDate;
-		private String gender;
+		private Gender gender;
 		private String address;
 		private int telephone;
 		private Date joindate;
@@ -22,7 +22,7 @@ import java.util.Date;
 		private ArrayList<Employee> emplist;
 		Department depObj;
 		
-		public Employee(int id,String fullname,String bdate,String gender
+		public Employee(int id,String fullname,String bdate,Gender gender
 				,String address,int telephone,Date joindate,String education,double salary){
 			
 			this.id=countId++;///for employee id add by 1
@@ -61,10 +61,10 @@ import java.util.Date;
 		public void setBirthDate(String birthDate) {
 			this.birthDate = birthDate;
 		}
-		public String getGender() {
+		public Gender getGender() {
 			return gender;
 		}
-		public void setGender(String gender) {
+		public void setGender(Gender gender) {
 			this.gender = gender;
 		}
 		public String getAddress() {
@@ -107,17 +107,17 @@ import java.util.Date;
 			
 	
 			
-			 Employee empObj1=new Employee(this.getId(),"Yonas Abrehqm","988-00-74","Male",
+			 Employee empObj1=new Employee(this.getId(),"Yonas Abrehqm","988-00-74",gender.MALE,
 											"Stockholm",012345,null,"Computer",20);
-			 Employee empObj2=new Employee(this.getId(),"Yonas Abrehqm","1988-00-74","Male",
+			 Employee empObj2=new Employee(this.getId(),"Yonas Abrehqm","1988-00-74",gender.MALE,
 						"Stockholm",012345,null,"Computer",20);
-			 Employee empObj3=new Employee(this.getId(),"Yonas Abrehqm","988-00-74","Male",
+			 Employee empObj3=new Employee(this.getId(),"Yonas Abrehqm","988-00-74",gender.MALE,
 						"Stockholm",012345,null,"Computer",20);
-			Employee empObj4=new Employee(this.getId(),"Yonas Abrehqm","988-00-74","Male",
+			Employee empObj4=new Employee(this.getId(),"Yonas Abrehqm","988-00-74",gender.MALE,
 						"Stockholm",012345,null,"Computer",20);
-			Employee empObj5=new Employee(this.getId(),"Yonas Abrehqm","988-00-74","Male",
+			Employee empObj5=new Employee(this.getId(),"Yonas Abrehqm","988-00-74",gender.MALE,
 						"Stockholm",012345,null,"Computer",20);
-			Employee empObj6=new Employee(this.getId(),"Yonas Abrehqm","988-00-74","Male",
+			Employee empObj6=new Employee(this.getId(),"Yonas Abrehqm","988-00-74",gender.MALE,
 						"Stockholm",012345,null,"Computer",20);
 			
 		    emplist.add(empObj1);
