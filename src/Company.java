@@ -1,13 +1,14 @@
 import java.util.HashSet;
 
-import javax.print.attribute.HashAttributeSet;
+
 
 	public class Company {
 	private String name;
 	private String address;
 	private String phone;
 	private int id;
-	public HashSet<Department> listOfDepartments = new HashSet<>();
+
+
 
 	public Company(String name, String address, String phone, int id) {
 	

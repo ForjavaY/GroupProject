@@ -1,14 +1,14 @@
 package StaffMS;
 
-import java.util.Date;
+
 
 public class Technician extends Employee {
 	
-	private double bonus;
+	
 	public Technician (int id,String fullname,String bdate,String gender
-			,String address,int telephone,Date joindate,String education,double salary,double bonus){
+			,String address,int telephone,String joindate,String education,double salary,double bonus){
 		
-		super( id,fullname,bdate, gender,address,telephone,joindate,education, salary);
+ 		super( id,fullname,bdate, gender,address,telephone,joindate,education, salary);
 		this.bonus=bonus;
 	}
 	public double getBonus() {
@@ -18,4 +18,10 @@ public class Technician extends Employee {
 		this.bonus = bonus;
 	}
 	
+	public double bonus(){
+		newSalary=bonus + super.getSalary();
+		return newSalary;
+	}
+	private double bonus=0.0d;
+	private double newSalary=0.0d;
 }
