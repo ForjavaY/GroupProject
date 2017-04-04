@@ -6,10 +6,10 @@ public class Programmer extends Employee {
 
 	
 
-	public Programmer(int id, String fullname, String bdate, String gender, String address, int telephone,
+	public Programmer(String fullname, String bdate, String gender, String address, int telephone,
 			String joindate, String education, double salary, double bonus) {
 
-		super(id, fullname, bdate, gender, address, telephone, joindate, education, salary);
+		super(fullname, bdate, gender, address, telephone, joindate, education, salary);
 		this.bonus = bonus;
 
 	}

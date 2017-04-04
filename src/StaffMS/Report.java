@@ -1,9 +1,11 @@
 package StaffMS;
 
 import java.util.*;
-public class Report {
 
-		public Report(){
+public class Report {
+	ArrayList<Employee> empList;
+		
+	public Report(){
 			
 		}
 		Employee empObj=new  Employee();
@@ -11,11 +13,11 @@ public class Report {
 		
 		public void reportOne(){
 			
-		ArrayList<Employee> empList=new ArrayList<Employee>();
-		Employee techObj=new Technician(empObj.getId(),"Cristopher ","1988/02/14", "Male", "Stockholm", 07356, null, "Computer", 25000,20);
-		Employee secObj=new Secretory(empObj.getId(), "Sofi Udda","1981/02/14", "Male", "Malimo", 012345, null, "Computer", 30000,200);
-		Employee secObj1=new Secretory(empObj.getId(), " Udda","1981/02/14", "Male", "Malimo", 012345, null, "Computer", 21000.5,200);
-		Employee proObj=new Programmer(empObj.getId(), "Yonas A","1981/02/14", "Male", "Malimo", 012345, null, "Computer", 50000,350);
+		empList=new ArrayList<Employee>();
+		Employee techObj=new Technician("Cristopher","1988/02/14", "Male", "Stockholm", 07356, null, "Computer", 25000,20);
+		Employee secObj=new Secretory("Sofi Udda","1981/02/14", "Male", "Malimo", 012345, null, "Computer", 30000,200);
+		Employee secObj1=new Secretory(" Udda","1981/02/14", "Male", "Malimo", 012345, null, "Computer", 21000.5,200);
+		Employee proObj=new Programmer("Yonas A","1981/02/14", "Male", "Malimo", 012345, null, "Computer", 50000,350);
 		
 		empList.add(techObj);
 		empList.add(secObj);
