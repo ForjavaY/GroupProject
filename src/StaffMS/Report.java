@@ -12,7 +12,7 @@ public class Report {
 		public void reportOne(){
 			
 		ArrayList<Employee> empList=new ArrayList<Employee>();
-		Employee techObj=new Technician(empObj.getId(), "Cristopher ","1988/02/14", "Male", "Stockholm", 07356, null, "Computer", 25000,20);
+		Employee techObj=new Technician(empObj.getId(),"Cristopher ","1988/02/14", "Male", "Stockholm", 07356, null, "Computer", 25000,20);
 		Employee secObj=new Secretory(empObj.getId(), "Sofi Udda","1981/02/14", "Male", "Malimo", 012345, null, "Computer", 30000,200);
 		Employee secObj1=new Secretory(empObj.getId(), " Udda","1981/02/14", "Male", "Malimo", 012345, null, "Computer", 21000.5,200);
 		Employee proObj=new Programmer(empObj.getId(), "Yonas A","1981/02/14", "Male", "Malimo", 012345, null, "Computer", 50000,350);
@@ -103,16 +103,17 @@ public class Report {
 			}
 		}
 		public double GenderPercentage(ArrayList<Employee> emplist){
-			double gpercentage=0.0d;
+			
 			int count=0;
-			for(Employee e: emplist){
-				if(e.getGender()=="Male")
+			for(int i=0;i<emplist.size();i++){
+		
+				if(emplist.get(i).getGender().contentEquals("Male")){
 				
 				count++;
-				
+				}
 			}
 			
-				return gpercentage=count/100;
+				return count/100;
 		}
 	
 	}
